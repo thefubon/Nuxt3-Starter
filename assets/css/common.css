@@ -1,0 +1,29 @@
+/* ========================================================================
+  Common
+=========================================================================== */
+
+.thumbnail {
+  @apply rounded-md overflow-hidden object-cover active:-translate-y-1 focus:-translate-y-1 hover:-translate-y-1 transform-gpu;
+
+  -ms-flex-preferred-size: 0;
+  flex-basis: 0;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  transition: transform .5s cubic-bezier(.68, -.55, .265, 3)
+}
+
+.heading {
+  @apply text-4xl xs:text-5xl md:text-8xl font-black text-default dark:text-gray-300;
+}
+
+.meta {
+  @apply text-xs font-bold uppercase text-default dark:text-gray-300;
+}
+
+.title {
+  @apply text-2xl md:text-3xl font-bold leading-tight text-default dark:text-gray-300;
+}
+
+.description {
+  @apply md:text-lg leading-relaxed font-light text-default dark:text-gray-300;
+}
