@@ -1,6 +1,10 @@
 <template>
-  <div class="container">
+  <div>
     <Header />
-    <slot />
+    <main class="container">
+      <div class="prose max-w-none">
+        <slot />
+      </div>
+    </main>
   </div>
 </template>

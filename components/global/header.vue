@@ -36,6 +36,10 @@
     {
       title: 'Articles',
       slug: '/articles'
+    },
+    {
+      title: 'Data',
+      slug: '/data'
     }
   ];
 </script>

@@ -3,7 +3,6 @@ title: 'Home'
 navigation: false
 ---
 
-# Homo
+# Home Page
 
-::InfoBox
-::
+## Starter Kit

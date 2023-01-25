@@ -19,6 +19,6 @@
 
 <script>
 definePageMeta({
-  layout: 'articles'
+  layout: 'default'
 })
 </script>
