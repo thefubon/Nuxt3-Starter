@@ -1,5 +1,6 @@
 <template>
   <div>
-    <ContentDoc />
+    <Header />
+    <slot />
   </div>
 </template>
