@@ -14,10 +14,9 @@ export default defineNuxtConfig({
         { name: 'author', content: '' },
         { name: 'copyright', content: '' },
         { name: 'viewport', content: 'width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0' },
-        { name: 'application-name', content: '' },
+        { name: 'application-name', content: 'Nuxt 3' },
         { name: 'msapplication-tooltip', content: '' },
         { name: 'format-detection', content: 'telephone=no' },
-        { name: 'format-detection', content: 'address=no' },
       ],
       link: [
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
@@ -59,7 +58,7 @@ export default defineNuxtConfig({
     },
     markdown: {
       tags: {
-        p: 'span'
+        //p: 'span'
       },
       
       toc: {
@@ -99,14 +98,6 @@ export default defineNuxtConfig({
   nitro: {
     prerender: {
       routes: ['/sitemap.xml']
-    }
-  },
-
-  nuxtIcon: {
-    size: '24px', // default <Icon> size applied
-    class: 'icon', // default <Icon> class applied
-    aliases: {
-      'nuxt': 'logos:nuxt-icon',
     }
   },
   

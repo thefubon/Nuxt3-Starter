@@ -29,5 +29,5 @@
 }
 
 .icon {
-  @apply !w-6 !h-6 relative -top-0.5
+  @apply relative -top-0.5
 }
