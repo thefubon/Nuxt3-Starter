@@ -26,12 +26,12 @@ head:
     Starter Kit :tada:
    
     #description
-    Donwload in **GitHub** &ensp; [Download <Icon name="ri:github-fill" />](https://github.com/thefubon/nuxt3-starter){:target="_blank" :class="py-2 px-4 rounded-md bg-indigo-600 text-white no-underline"}
+    Donwload in **GitHub** &ensp; [Download <Icon name="ri:github-fill" />](https://github.com/thefubon/nuxt3-starter){target="_blank" .py-2 .px-4 .rounded-md .bg-indigo-600 .text-white .no-underline}
     ::
 
     ## Roadmap
     
-    ::div{class="not-prose"}
+    ::div{.not-prose}
     - [x] &ensp;[Nuxt 3](https://nuxt.com){:target="_blank"}
     - [x] &ensp;[Content 2](https://content.nuxtjs.org){:target="_blank"}
     - [x] &ensp;[Nuxt Image](https://v1.image.nuxtjs.org){:target="_blank"}
@@ -46,7 +46,7 @@ head:
     ::
   :::
 
-  :::item{class="flex justify-end"}
+  :::item{.flex .justify-end}
   ![Alt](/meta.jpg "Подсказка"){:class="rounded-lg" width="400"}
   :::
 ::
