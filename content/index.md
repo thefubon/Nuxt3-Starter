@@ -64,26 +64,10 @@ Look at the \[Content documentation\](https://content-v2.nuxtjs.org/) to learn m
   :::
 ::
 
-::alert{type="warning"}
-The **alert** component.
-::
+### Nuxt Image
 
-:banner{}-world
+:ProseImg{src=/meta.jpg sizes="sm:100vw md:50vw lg:400px" format="webp" quality="80" width="200" height="100"}
 
-Hello [World]{.bg-blue-500}!
-
-Attributes works on:
-- ![](/meta.png){.inline.w-5.h-5.bg-primary-500} image,
-- [link](#attributes){.bg-primary-400}, `code`{.text-red-500},
-- _italic_{.bg-primary-500} and **bold**{.bg-primary-500} texts.
-
-::icon-card
----
-icon: Icon
-description: Harness the full power of Nuxt and the Nuxt ecosystem.
-title: Nuxt Architecture.
----
-::
 
 ```md
 ---
@@ -152,24 +136,7 @@ Look at the \[Content documentation\](https://content-v2.nuxtjs.org/) to learn m
   :::
 ::
 
-::alert{type="warning"}
-The **alert** component.
-::
+### Nuxt Image
 
-:banner{}-world
-
-Hello [World]{.bg-blue-500}!
-
-Attributes works on:
-- ![](/meta.png){.inline.w-5.h-5.bg-primary-500} image,
-- [link](#attributes){.bg-primary-400}, `code`{.text-red-500},
-- _italic_{.bg-primary-500} and **bold**{.bg-primary-500} texts.
-
-::icon-card
----
-icon: Icon
-description: Harness the full power of Nuxt and the Nuxt ecosystem.
-title: Nuxt Architecture.
----
-::
+:ProseImg{src=/meta.jpg sizes="sm:100vw md:50vw lg:400px" format="webp" quality="80" width="200" height="100"}
 ```
