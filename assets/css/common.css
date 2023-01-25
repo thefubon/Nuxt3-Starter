@@ -27,3 +27,7 @@
 .description {
   @apply md:text-lg leading-relaxed font-light text-default dark:text-gray-300;
 }
+
+.icon {
+  @apply !w-6 !h-6 relative -top-0.5
+}

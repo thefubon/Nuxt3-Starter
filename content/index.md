@@ -26,7 +26,7 @@ head:
     Starter Kit :tada:
    
     #description
-    Donwload in **GitHub** &ensp; [Download](https://github.com/thefubon/nuxt3-starter){:target="_blank" :class="py-2 px-4 rounded-md bg-indigo-600 text-white no-underline"}
+    Donwload in **GitHub** &ensp; [Download <Icon name="ri:github-fill" />](https://github.com/thefubon/nuxt3-starter){:target="_blank" :class="py-2 px-4 rounded-md bg-indigo-600 text-white no-underline"}
     ::
 
     ## Roadmap
@@ -80,7 +80,7 @@ head:
     Starter Kit :tada:
    
     #description
-    Скачать с **GitHub** &ensp; [Download](https://github.com/thefubon/nuxt3-starter){:target="_blank" :class="py-2 px-4 rounded-md bg-indigo-600 text-white no-underline"}
+    Скачать с **GitHub** &ensp; [Download <Icon name="ri:github-fill" />](https://github.com/thefubon/nuxt3-starter){:target="_blank" :class="py-2 px-4 rounded-md bg-indigo-600 text-white no-underline"}
     ::
 
     ## Roadmap
