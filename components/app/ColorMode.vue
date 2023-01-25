@@ -3,15 +3,15 @@
   <div class="hs-dropdown relative inline-flex [--placement:top-right]">
     <button id="hs-dropup" type="button" class="hs-dropdown-toggle inline-flex gap-x-2">
       <span v-if="$colorMode.preference === 'system'">
-        <Icon class="text-black dark:text-gray-300 hover:text-black/75 block dark:hover:text-primary duration-150" name="uil:desktop" size="25" />
+        <Icon class="text-black dark:text-white hover:text-black block dark:hover:text-primary duration-150" name="uil:desktop" size="25" />
       </span>
 
       <span v-else-if="$colorMode.preference === 'light'">
-        <Icon class="text-black dark:text-gray-300 hover:text-black/75 block dark:hover:text-primary duration-150" name="uil:sun" size="25" />
+        <Icon class="text-black dark:text-white hover:text-black block dark:hover:text-primary duration-150" name="uil:sun" size="25" />
       </span>
 
       <span v-else-if="$colorMode.preference === 'dark'">
-        <Icon class="text-black dark:text-gray-300 hover:text-black/75 block dark:hover:text-primary duration-150" name="uil:moon" size="25" />
+        <Icon class="text-black dark:text-white hover:text-black block dark:hover:text-primary duration-150" name="uil:moon" size="25" />
       </span>
     </button>
 

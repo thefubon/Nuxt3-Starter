@@ -47,6 +47,28 @@ export default defineNuxtConfig({
     '@nuxtjs/color-mode',
   ],
 
+  content: {
+    // https://content.nuxtjs.org/api/configuration
+    highlight: {
+      theme: {
+        // Default theme (same as single string)
+        default: 'material-palenight',
+        // Theme used if `html.dark`
+        dark: 'github-dark',
+      }
+    },
+    markdown: {
+      tags: {
+        p: 'span'
+      },
+      
+      toc: {
+        depth: 5,
+        searchDepth: 5
+      },
+    }
+  },
+
   postcss: {
     plugins: {
       tailwindcss: {},
