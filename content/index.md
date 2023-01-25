@@ -1,5 +1,5 @@
 ---
-title: 'My Page Title'
+title: 'Fubon | Nuxt 3 Starter'
 description: 'What a lovely page.'
 image:
   src: '/meta.jpg'
@@ -74,7 +74,7 @@ head:
 # Heading H1
 
 ::grid
-  :::item{class="not-prose"}
+  :::item
     ::hero
     Starter Kit
    
@@ -82,8 +82,9 @@ head:
     Скачать с **GitHub** &ensp; [Download](https://github.com/thefubon/nuxt3-starter){:target="_blank" :class="py-2 px-4 rounded-md bg-indigo-600 text-white no-underline"}
     ::
 
-    ### Roadmap
-
+    ## Roadmap
+    
+    ::div{class="not-prose"}
     - [x] &ensp;[Nuxt 3](https://nuxt.com){:target="_blank"}
     - [x] &ensp;[Content 2](https://content.nuxtjs.org){:target="_blank"}
     - [x] &ensp;[Nuxt Image](https://v1.image.nuxtjs.org){:target="_blank"}
@@ -94,6 +95,7 @@ head:
     - [x] &ensp;[Color Mode](https://color-mode.nuxtjs.org){:target="_blank"}
     - [x] &ensp;[Preline](https://preline.co){:target="_blank"}
     - [ ] &ensp;[i18n](https://v8.i18n.nuxtjs.org/){:target="_blank"}
+    ::
   :::
 
   :::item{class="flex justify-end"}
