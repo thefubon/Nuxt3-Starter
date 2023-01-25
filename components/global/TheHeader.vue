@@ -9,12 +9,6 @@
         </NuxtLink>
       </div>
 
-      <div class="flex gap-4">
-        <div v-for="(item,index) in nav" :key="index">
-          <NuxtLink class="dark:text-white" activeClass="font-bold" :to="item.slug">{{item.title}}</NuxtLink>
-        </div>
-      </div>
-
       <div class="flex items-center gap-10">
         <div class="flex items-center gap-3 text-sm text-gray-300">
           <a class="text-black dark:text-white hover:text-black block dark:hover:text-primary duration-150" href="https://vk.com/thefubon" target="_blank"><Icon name="mdi:vk" size="24"/></a>
@@ -24,6 +18,14 @@
         <AppColorMode/>
       </div>
     </div>
+
+    <nav class="container">
+      <div class="flex gap-4">
+        <div v-for="(item,index) in nav" :key="index">
+          <NuxtLink class="dark:text-white" activeClass="font-bold" :to="item.slug">{{item.title}}</NuxtLink>
+        </div>
+      </div>
+    </nav>
   </header>
 </template>
 
