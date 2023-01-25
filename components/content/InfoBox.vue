@@ -1,13 +1,14 @@
 <template>
   <div>
 
+    <slot />
+
     <div :id="'id-' + index + 1" v-for="(item,index) in list" :key="index">
       <span v-if="item.new">New</span>
       {{item.title}}
       {{item.description}}
     </div>
     
-
     <div class="">
       <input type="text" placeholder="Search..." v-model="name" class="p-2 border">
 

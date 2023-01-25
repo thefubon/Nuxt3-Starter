@@ -9,13 +9,11 @@
         </a>
       </div>
 
-      <ContentNavigation v-slot="{ navigation }">
-        <ul class="flex justify-center items-center gap-4 h-20 bg-gray-200">
-          <li active-class="font-bold" v-for="link of navigation" :key="link._path">
-            <NuxtLink :to="link._path">{{ link.title }} {{ link.icon }}</NuxtLink>
-          </li>
-        </ul>
-      </ContentNavigation>
+      <div class="flex gap-4">
+        <div v-for="(item,index) in nav" :key="index">
+          <NuxtLink activeClass="font-bold" :to="item.slug">{{item.title}}</NuxtLink>
+        </div>
+      </div>
 
       <div class="flex items-center gap-10">
         <div class="flex items-center gap-3 text-sm text-gray-300">
@@ -29,6 +27,18 @@
   </header>
 </template>
 
+<script setup>
+  const nav = [
+    {
+      title: 'About',
+      slug: '/about'
+    },
+    {
+      title: 'Articles',
+      slug: '/articles'
+    }
+  ];
+</script>
 
 <style scoped>
 .light img.logo-dark {

@@ -16,3 +16,9 @@
     </ContentList>
   </main>
 </template>
+
+<script>
+definePageMeta({
+  layout: 'articles'
+})
+</script>

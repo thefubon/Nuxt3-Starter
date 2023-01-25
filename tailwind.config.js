@@ -7,7 +7,7 @@ module.exports = {
     "./plugins/**/*.{js,ts}",
     "./nuxt.config.{js,ts}",
     "./app.vue",
-    "./content/**/*.vue",
+    "./content/**/*.md",
     "node_modules/preline/dist/*.js",
   ],
   darkMode: 'class',
