@@ -41,7 +41,8 @@ head:
     - [x] &ensp;[Sitemap](https://content.nuxtjs.org/guide/recipes/sitemap){:target="_blank"}
     - [x] &ensp;[Color Mode](https://color-mode.nuxtjs.org){:target="_blank"}
     - [x] &ensp;[Preline](https://preline.co){:target="_blank"}
-    - [ ] &ensp;[i18n](https://v8.i18n.nuxtjs.org/){:target="_blank"}
+    - [ ] &ensp;[i18n](https://v8.i18n.nuxtjs.org){:target="_blank"}
+    - [ ] &ensp;[Cloudinary](https://v1.image.nuxtjs.org/providers/cloudinary){:target="_blank"}
     ::
   :::
 
@@ -52,7 +53,7 @@ head:
 
 ```md
 ---
-title: 'My Page Title'
+title: 'Fubon | Nuxt 3 Starter'
 description: 'What a lovely page.'
 image:
   src: '/meta.jpg'
@@ -94,7 +95,8 @@ head:
     - [x] &ensp;[Sitemap](https://content.nuxtjs.org/guide/recipes/sitemap){:target="_blank"}
     - [x] &ensp;[Color Mode](https://color-mode.nuxtjs.org){:target="_blank"}
     - [x] &ensp;[Preline](https://preline.co){:target="_blank"}
-    - [ ] &ensp;[i18n](https://v8.i18n.nuxtjs.org/){:target="_blank"}
+    - [ ] &ensp;[i18n](https://v8.i18n.nuxtjs.org){:target="_blank"}
+    - [ ] &ensp;[Cloudinary](https://v1.image.nuxtjs.org/providers/cloudinary){:target="_blank"}
     ::
   :::
 
