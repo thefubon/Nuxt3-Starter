@@ -23,7 +23,7 @@ head:
 ::grid
   :::item
     ::hero
-    Starter Kit
+    Starter Kit :tada:
    
     #description
     Скачать с **GitHub** &ensp; [Download](https://github.com/thefubon/nuxt3-starter){:target="_blank" :class="py-2 px-4 rounded-md bg-indigo-600 text-white no-underline"}
@@ -77,7 +77,7 @@ head:
 ::grid
   :::item
     ::hero
-    Starter Kit
+    Starter Kit :tada:
    
     #description
     Скачать с **GitHub** &ensp; [Download](https://github.com/thefubon/nuxt3-starter){:target="_blank" :class="py-2 px-4 rounded-md bg-indigo-600 text-white no-underline"}
