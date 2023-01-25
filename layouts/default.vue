@@ -1,7 +1,7 @@
 <template>
   <div>
     <Header />
-    <main class="container">
+    <main class="container py-10">
       <div class="prose max-w-none">
         <slot />
       </div>
