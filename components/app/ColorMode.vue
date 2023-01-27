@@ -1,5 +1,21 @@
 <template>
 
+<div>
+  <div class="flex items-center">
+    <!-- <h1>Color mode: {{ $colorMode.value }}</h1> -->
+    <select class="inline-block w-[110px] py-1 px-4 border-2 font-medium focus:outline-none focus:ring-0 border-indigo-600 bg-indigo-600 text-white rounded-full dark:bg-white dark:text-indigo-600" v-model="$colorMode.preference">
+      <option value="system">System</option>
+      <option value="light">Light</option>
+      <option value="dark">Dark</option>
+      <option value="sepia">Sepia</option>
+    </select>
+  </div>
+
+  <!-- <ColorScheme placeholder="..." tag="span">
+    Color mode: <b>{{ $colorMode.preference }}</b>
+    <span v-if="$colorMode.preference === 'system'">(<i>{{ $colorMode.value }}</i> mode detected)</span>
+  </ColorScheme>
+
   <div class="hs-dropdown relative inline-flex [--placement:top-right]">
     <button id="hs-dropup" type="button" class="hs-dropdown-toggle inline-flex gap-x-2">
       <span v-if="$colorMode.preference === 'system'">
@@ -31,6 +47,31 @@
         </button>
       </div>
     </div>
-  </div>
+  </div> -->
+
+</div>
   
 </template>
+
+<script setup>
+const colorMode = useColorMode()
+console.log(colorMode.preference)
+
+// definePageMeta({
+//   colorMode: 'light',
+// })
+</script>
+<style>
+body {
+  background-color: #fff;
+  color: rgba(0,0,0,0.8);
+}
+.dark-mode body {
+  background-color: #091a28;
+  color: #ebf4f1;
+}
+.sepia-mode body {
+  background-color: #f1e7d0;
+  color: #433422;
+}
+</style>

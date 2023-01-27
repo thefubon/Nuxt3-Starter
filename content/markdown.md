@@ -50,10 +50,12 @@ Look at the \[Content documentation\](https://content-v2.nuxtjs.org/) to learn m
     - [x] &ensp;[Nuxt Image](https://v1.image.nuxtjs.org){:target="_blank"}
     - [x] &ensp;[Tailwind CSS](https://tailwindcss.com){:target="_blank"}
     - [x] &ensp;[Tailwind CSS / Typography](https://tailwindcss.com/docs/typography-plugin){:target="_blank"}
+    - [x] &ensp;[Tailwind CSS / Form](https://github.com/tailwindlabs/tailwindcss-forms){:target="_blank"}
     - [x] &ensp;[Nuxt Icon](https://nuxt.com/modules/icon){:target="_blank"}
     - [x] &ensp;[Sitemap](https://content.nuxtjs.org/guide/recipes/sitemap){:target="_blank"}
     - [x] &ensp;[Color Mode](https://color-mode.nuxtjs.org){:target="_blank"}
     - [x] &ensp;[Preline](https://preline.co){:target="_blank"}
+    - [x] &ensp;[Supabase / Auth](https://supabase.com){:target="_blank"}
     - [ ] &ensp;[i18n](https://v8.i18n.nuxtjs.org){:target="_blank"}
     - [ ] &ensp;[Cloudinary](https://v1.image.nuxtjs.org/providers/cloudinary){:target="_blank"}
     ::

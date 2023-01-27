@@ -1,5 +1,6 @@
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
+  ssr: true,
 
   app: {
     head: {
@@ -35,15 +36,18 @@ export default defineNuxtConfig({
     }
   },
 
+  components: true,
+
   css: [
     '~/assets/css/tailwind.css'
   ],
 
   modules: [
+    '@nuxtjs/color-mode',
     '@nuxt/content',
     '@nuxt/image-edge',
     'nuxt-icon',
-    '@nuxtjs/color-mode',
+    '@nuxtjs/supabase',
   ],
 
   content: {
@@ -75,6 +79,44 @@ export default defineNuxtConfig({
     },
   },
 
+  colorMode: {
+    preference: 'system', // default value of $colorMode.preference
+    fallback: 'light', // fallback value if not system preference found
+    hid: 'nuxt-color-mode-script',
+    globalName: '__NUXT_COLOR_MODE__',
+    componentName: 'ColorScheme',
+    classPrefix: '',
+    classSuffix: '',
+    storageKey: 'nuxt-color-mode'
+  },
+
+  // i18n: {
+  //   locales: [
+  //     {
+  //       iso: 'ru-RU',
+  //       code: 'ru',
+  //       file: 'ru.json',
+  //       name: 'Русский'
+  //     },
+  //     {
+  //       iso: 'en-US',
+  //       code: 'en',
+  //       file: 'en.json',
+  //       name: 'English'
+  //     },
+  //     {
+  //       iso: 'de-De',
+  //       code: 'de',
+  //       file: 'de.json',
+  //       name: 'Deutsch'
+  //     }
+  //   ],
+  //   lazy: true,
+  //   langDir: 'lang/',
+  //   defaultLocale: 'ru',
+  //   strategy: 'prefix_except_default',
+  // },
+
   image: {
     cloudinary: {
       baseURL: 'https://res.cloudinary.com/drjdwwxf7/image/upload/v1667079274/',
@@ -89,16 +131,18 @@ export default defineNuxtConfig({
     },
   },
 
-  colorMode: {
-    classSuffix: '',
-    fallback: 'system',
-    storageKey: 'color-mode',
-  },
-
   nitro: {
     prerender: {
       routes: ['/sitemap.xml']
     }
   },
+
+  // vite: {
+	// 	css: {
+	// 		preprocessorOptions: {
+	// 			scss: {}
+	// 		},
+	// 	},
+	// },
   
 })
