@@ -137,12 +137,12 @@ export default defineNuxtConfig({
     }
   },
 
-  // vite: {
-	// 	css: {
-	// 		preprocessorOptions: {
-	// 			scss: {}
-	// 		},
-	// 	},
-	// },
+  vite: {
+		css: {
+			preprocessorOptions: {
+				scss: {}
+			},
+		},
+	},
   
 })
