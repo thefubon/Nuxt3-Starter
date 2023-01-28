@@ -10,9 +10,15 @@
       </div>
 
       <div class="flex items-center gap-6">
-        <div class="flex items-center gap-3 text-gray-300">
+        <div class="flex items-center gap-3 text-gray-300">        Бвшм сдфыы=Эадуч шеуьы-сутеук пфз-3 еуче-пкфн-300ЭЮ
+
           <a class="text-black dark:text-white hover:text-black block dark:hover:text-primary duration-150" href="https://vk.com/thefubon" target="_blank"><Icon name="mdi:vk" size="24"/></a>
           <a class="text-black dark:text-white hover:text-black block dark:hover:text-primary duration-150" href="https://t.me/fubon_ru" target="_blank"><Icon name="akar-icons:telegram-fill" size="21"/></a>
+
+          <a class="text-black dark:text-white hover:text-black block dark:hover:text-primary duration-150" href="https://dev.to/fubon" target="_blank"><Icon name="material-symbols:logo-dev-rounded" size="21"/></a>
+          <a class="text-black dark:text-white hover:text-black block dark:hover:text-primary duration-150" href="https://ravenation.club/@fubon" target="_blank"><Icon name="mdi:mastodon" size="21"/></a>
+          <a class="text-black dark:text-white hover:text-black block dark:hover:text-primary duration-150" href="https://rutube.ru/channel/23660299" target="_blank"><Icon name="ic:outline-ondemand-video" size="21"/></a>
+
         </div>
 
         <NuxtLink to="/auth" class="inline-flex items-center py-1 px-4 bg-indigo-600 text-white rounded-full dark:bg-white dark:text-indigo-600">Sign In</NuxtLink>
