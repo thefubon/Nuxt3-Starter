@@ -10,7 +10,7 @@
       </div>
 
       <div class="flex items-center gap-6">
-        <div class="flex items-center gap-3 text-gray-300">        Бвшм сдфыы=Эадуч шеуьы-сутеук пфз-3 еуче-пкфн-300ЭЮ
+        <div class="flex items-center gap-3 text-gray-300">
 
           <a class="text-black dark:text-white hover:text-black block dark:hover:text-primary duration-150" href="https://vk.com/thefubon" target="_blank"><Icon name="mdi:vk" size="24"/></a>
           <a class="text-black dark:text-white hover:text-black block dark:hover:text-primary duration-150" href="https://t.me/fubon_ru" target="_blank"><Icon name="akar-icons:telegram-fill" size="21"/></a>
