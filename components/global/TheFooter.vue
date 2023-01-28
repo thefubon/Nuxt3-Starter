@@ -2,6 +2,8 @@
   <footer class="container py-10 flex flex-col md:flex-row justify-between items-center gap-6 md:gap-4">
     <AppColorMode/>
 
+    <NuxtLink to="https://shrty.vercel.app/ji4WUN" target="_blank">Fubon</NuxtLink>
+
     <div class="flex items-center gap-4 text-gray-300">
 
       <a class="text-black hover:text-indigo-600 block duration-150" href="https://vk.com/thefubon" target="_blank"><Icon name="mdi:vk" size="24"/></a>

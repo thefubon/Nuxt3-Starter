@@ -67,10 +67,6 @@ useHead({
   title: "Authenticate",
 });
 
-definePageMeta({
-  middleware: "auth",
-});
-
 const supabaseAuth = useSupabaseAuthClient();
 
 const isLoggingIn = ref<boolean>(true);
