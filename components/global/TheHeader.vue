@@ -55,10 +55,6 @@
       slug: '/data'
     },
     {
-      title: 'Markdown',
-      slug: '/markdown'
-    },
-    {
       title: 'Dashboard',
       slug: '/dashboard'
     }
