@@ -3,7 +3,7 @@
 <div>
   <div class="flex items-center">
     <!-- <h1>Color mode: {{ $colorMode.value }}</h1> -->
-    <select class="inline-block w-[110px] py-1 px-4 border-2 font-medium focus:outline-none focus:ring-0 border-indigo-600 bg-indigo-600 text-white rounded-full dark:bg-white dark:text-indigo-600" v-model="$colorMode.preference">
+    <select class="inline-block w-[110px] py-1 px-4 font-medium focus:outline-none focus:ring-0 border focus:border-black rounded-md text-sm" v-model="$colorMode.preference">
       <option value="system">System</option>
       <option value="light">Light</option>
       <option value="dark">Dark</option>
