@@ -3,7 +3,7 @@
     <div class="text-center">
       <h1 class="text-2xl md:text-5xl">Nuxt 3 / Content 2</h1>
 
-      <NuxtLink class="py-2 px-6 bg-indigo-600 hover:bg-indigo-700 rounded-md text-white no-underline duration-150" to="/dashboard">Dashboard</NuxtLink>
+      <NuxtLink class="py-2 px-6 bg-indigo-600 hover:bg-indigo-700 rounded-md text-white no-underline duration-150" :to="{name: 'dashboard'}">Dashboard</NuxtLink>
     </div>
   </section>
 </template>

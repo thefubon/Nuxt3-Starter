@@ -1,5 +1,5 @@
 <template>
-  <header class="sticky top-0 z-10 backdrop-blur-xl bg-white/75 dark:backdrop-blur-xl dark:bg-indigo-600">
+  <header class="dark:backdrop-blur-xl dark:bg-indigo-600">
     <div class="container flex h-16 md:h-20 items-center justify-between font-medium">
       <div class="flex items-center">
         <NuxtLink class="inline-block" :to="{ name: 'index',}">
@@ -10,7 +10,7 @@
       </div>
 
       <div class="flex items-center gap-6">
-        <NuxtLink to="/auth" class="inline-flex items-center py-1 px-4 bg-indigo-600 hover:bg-indigo-700 text-white rounded-md dark:bg-white dark:text-indigo-600 text-sm">Sign In</NuxtLink>
+        <NuxtLink to="/auth" class="inline-flex items-center py-2 px-4 bg-indigo-600 hover:bg-indigo-700 text-white rounded-md dark:bg-white dark:text-indigo-600 text-sm">Sign In</NuxtLink>
       </div>
     </div>
 
@@ -53,10 +53,6 @@
     {
       title: 'Data',
       slug: '/data'
-    },
-    {
-      title: 'Dashboard',
-      slug: '/dashboard'
     }
   ];
 </script>
