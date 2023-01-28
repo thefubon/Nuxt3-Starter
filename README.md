@@ -40,3 +40,7 @@ npm run preview
 ```
 
 Checkout the [deployment documentation](https://v3.nuxtjs.org/docs/deployment) for more information.
+
+## License
+
+The project is released under the WTFPL2 [Do What The F*ck You Want To Public License](https://fubon.uk).
