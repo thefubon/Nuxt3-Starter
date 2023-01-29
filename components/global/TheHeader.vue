@@ -63,8 +63,8 @@ const navLinks = ref<{
     label: 'Contact'
   },
   {
-    to: '/secret-page',
-    label: 'Secret Page'
+    to: '/secret',
+    label: 'Secret'
   },
 ])
 

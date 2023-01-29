@@ -6,7 +6,7 @@
 
 <script lang="ts" setup>
 useHead({
-  title: "Secret Page",
+  title: "Secret",
 });
 
 definePageMeta({
