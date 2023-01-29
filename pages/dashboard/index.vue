@@ -7,27 +7,41 @@
     </div>
 
     <div >
-      <AppLinkItem v-for="i in 10" :key="i" :link="{
-        shortKey: 'Short Key',
-        longUrl: 'Long Url',
-        id: 'id'
-      }" class="mt-5" />
+      <AppLinkItem v-for="link in data"
+        :key="link.id"
+        :link="{
+          shortKey: link.key,
+          longUrl: link.long_url || '',
+          id: link.id,
+        }"
+        class="mt-5"
+      />
     </div>
   </section>
 </template>
 
 <script lang="ts" setup>
-  useHead({
-    title: "Dashboard",
-  });
+import { Database } from "types/supabase"
 
-  definePageMeta({
-    middleware: "auth",
-  });
+useHead({
+  title: "Dashboard",
+});
 
-  // const { data, refresh } = await useLinks().getAllLinks();
+definePageMeta({
+  middleware: "auth",
+});
 
-  // const handleRefresh = (newLink: any) => {
-  //   refresh();
-  // };
+const client = useSupabaseClient<Database>();
+
+const user = useSupabaseUser();
+
+const { data } = useAsyncData("links", async () => {
+  const { data, error } = await client
+    .from("links")
+    .select("*")
+    .eq("user_id", user.value?.id);
+  return data;
+});
+
+console.log({ data });
 </script>
