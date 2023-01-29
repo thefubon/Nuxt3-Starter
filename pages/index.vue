@@ -10,6 +10,6 @@
   </section>
 </template>
 
-<script lang="ts" setup>
+<script setup>
 const user = useSupabaseUser();
 </script>
