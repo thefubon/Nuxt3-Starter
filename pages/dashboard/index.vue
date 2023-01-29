@@ -3,7 +3,7 @@
     <h1 class="text-4xl">Dashboard</h1>
 
     <div>
-      <AppLinkForm />
+      <AppLinkForm @created="refresh" />
     </div>
 
     <div >
@@ -35,7 +35,7 @@ const client = useSupabaseClient<Database>();
 
 const user = useSupabaseUser();
 
-const { data } = useAsyncData("links", async () => {
+const { data, refresh } = useAsyncData("links", async () => {
   const { data, error } = await client
     .from("links")
     .select("*")

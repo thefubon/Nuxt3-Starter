@@ -47,6 +47,8 @@ const form = reactive({
   key: "",
 });
 
+const emit = defineEmits(["created"])
+
 const handleLinkForm = async () => {
 
   try {
@@ -64,6 +66,8 @@ const handleLinkForm = async () => {
     createShortKey();
     form.long_url = "";
     alert("Link created successfully");
+
+    emit("created", 1)
   } catch (e) {
     console.log(e);
   }

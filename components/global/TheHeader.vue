@@ -10,7 +10,22 @@
       </div>
 
       <div class="flex items-center gap-6">
-        <NuxtLink to="/auth" class="inline-flex items-center py-2 px-4 bg-indigo-600 hover:bg-indigo-700 text-white rounded-md dark:bg-white dark:text-indigo-600 text-sm">Sign In</NuxtLink>
+        <div v-if="!user">
+          <NuxtLink
+            class="inline-flex items-center py-2 px-4 bg-indigo-600 hover:bg-indigo-700 text-white rounded-md dark:bg-white dark:text-indigo-600 text-sm"
+            to="/auth"
+          >
+            Sign In
+          </NuxtLink>
+        </div>
+         <div v-else>
+          <button
+            class="inline-flex items-center py-2 px-4 bg-red-600 hover:bg-red-700 text-white rounded-md dark:bg-white dark:text-indigo-600 text-sm"
+            @click="handleLogout"
+          >
+            Logout
+          </button>
+        </div>
       </div>
     </div>
 
@@ -31,30 +46,41 @@
 </template>
 
 <script lang="ts" setup>
-  const navLinks = ref<{
-    to: string,
-    label: string
-  }[]>([
-    {
-      to: '/about',
-      label: 'About'
-    },
-    {
-      to: '/contact',
-      label: 'Contact'
-    },
-  ])
+const user = useSupabaseUser();
 
-  const nav = [
-    {
-      title: 'Articles',
-      slug: '/articles'
-    },
-    {
-      title: 'Data',
-      slug: '/data'
-    }
-  ];
+const auth  = useSupabaseAuthClient();
+
+const navLinks = ref<{
+  to: string,
+  label: string
+}[]>([
+  {
+    to: '/about',
+    label: 'About'
+  },
+  {
+    to: '/contact',
+    label: 'Contact'
+  },
+])
+
+const handleLogout = async () => {
+  await auth.auth.signOut();
+  useRouter().push({
+    name: 'index',
+  });
+};
+
+const nav = [
+  {
+    title: 'Articles',
+    slug: '/articles'
+  },
+  {
+    title: 'Data',
+    slug: '/data'
+  }
+];
 </script>
 
 <style scoped>
