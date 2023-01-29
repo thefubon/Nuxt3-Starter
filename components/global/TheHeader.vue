@@ -18,7 +18,8 @@
             Sign In
           </NuxtLink>
         </div>
-         <div v-else>
+         <div v-else class="flex gap-4 items-center">
+          <NuxtLink to="/dashboard">Dashboard</NuxtLink>
           <button
             class="inline-flex items-center py-2 px-4 bg-red-600 hover:bg-red-700 text-white rounded-md dark:bg-white dark:text-indigo-600 text-sm"
             @click="handleLogout"
@@ -48,7 +49,7 @@
 <script lang="ts" setup>
 const user = useSupabaseUser();
 
-const auth  = useSupabaseAuthClient();
+const auth = useSupabaseAuthClient();
 
 const navLinks = ref<{
   to: string,
