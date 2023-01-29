@@ -62,6 +62,10 @@ const navLinks = ref<{
     to: '/contact',
     label: 'Contact'
   },
+  {
+    to: '/secret-page',
+    label: 'Secret Page'
+  },
 ])
 
 const handleLogout = async () => {
