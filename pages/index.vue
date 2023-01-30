@@ -1,5 +1,5 @@
 <template>
-  <section class="md:h-64 lg:h-80 xl:h-96 2xl:h-128 grid place-content-center">
+  <section class="grid place-content-center">
     <div class="text-center">
       <h1 class="text-2xl md:text-5xl">Nuxt 3 Starter</h1>
       
@@ -35,6 +35,7 @@ const pack = [
   {title: 'Nano ID 4.0.0'},
   {title: 'Preline 1.7.0'},
 
+  {title: '---'},
   {title: 'Nuxt I18n 7.3.1 (Soon)'},
   {title: 'Nuxt Image-Edge / Cloudinary (Soon)'},
   {title: 'Nuxt Cookie Control 4.0.3 (Soon)'},
