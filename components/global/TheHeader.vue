@@ -56,16 +56,8 @@ const navLinks = ref<{
   label: string
 }[]>([
   {
-    to: '/about',
-    label: 'About'
-  },
-  {
-    to: '/contact',
-    label: 'Contact'
-  },
-  {
-    to: '/secret',
-    label: 'Secret'
+    to: '/content',
+    label: 'Content'
   },
 ])
 
