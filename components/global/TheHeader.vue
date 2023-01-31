@@ -46,25 +46,22 @@
   </header>
 </template>
 
-<script lang="ts" setup>
+<script setup>
 const user = useSupabaseUser();
 
 const auth = useSupabaseAuthClient();
 
-const navLinks = ref<{
-  to: string,
-  label: string
-}[]>([
+const navLinks = [
   {
     to: '/content',
     label: 'Content'
-  },
-])
+  }
+]
 
 const handleLogout = async () => {
   await auth.auth.signOut();
   useRouter().push({
-    name: 'index',
+    name: '/',
   });
 };
 

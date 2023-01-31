@@ -4,6 +4,8 @@
       <h1 class="text-2xl md:text-5xl">Nuxt 3 Starter</h1>
 
       <NuxtLink v-if="!user" class="py-2 px-6 bg-indigo-600 hover:bg-indigo-700 rounded-md text-white no-underline duration-150" :to="{name: 'dashboard'}">Dashboard</NuxtLink>
+
+      {{config.public.appUrl}}
       
       <div>
         <h4 class="text-xl font-bold mb-1">Project Pack</h4>
@@ -16,6 +18,8 @@
 </template>
 
 <script setup>
+const config = useRuntimeConfig();
+
 const user = useSupabaseUser();
 
 const pack = [
