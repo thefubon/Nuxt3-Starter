@@ -33,6 +33,10 @@ export default defineNuxtConfig({
       // script: [
       //   { src: '/' }
       // ],
+    },
+    pageTransition: {
+      name: 'page',
+      mode: 'out-in'
     }
   },
 

@@ -35,6 +35,7 @@ const pack = [
   {title: 'Sitemap 7.1.1'},
   {title: 'Tailwind CSS 3.2.4'},
   {title: 'Preline 1.7.0'},
+  {title: 'Page Transitions'},
 
   {title: '---'},
   {title: 'Nuxt I18n (Soon)'},
