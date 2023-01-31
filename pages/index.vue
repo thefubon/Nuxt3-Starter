@@ -37,8 +37,8 @@ const pack = [
   {title: 'Preline 1.7.0'},
 
   {title: '---'},
-  {title: 'Nuxt I18n 7.3.1 (Soon)'},
+  {title: 'Nuxt I18n (Soon)'},
   {title: 'Nuxt Image-Edge / Cloudinary (Soon)'},
-  {title: 'Nuxt Cookie Control 4.0.3 (Soon)'},
+  {title: 'Nuxt Cookie Control (Soon)'},
 ]
 </script>
