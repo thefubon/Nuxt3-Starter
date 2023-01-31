@@ -3,10 +3,9 @@
     <div class="text-center">
       <h1 class="text-2xl md:text-5xl">Nuxt 3 Starter</h1>
 
-      <NuxtLink v-if="!user" class="py-2 px-6 bg-indigo-600 hover:bg-indigo-700 rounded-md text-white no-underline duration-150" :to="{name: 'dashboard'}">Dashboard</NuxtLink>
-
-      {{config.public.appUrl}}
-      
+      <NuxtLink v-if="!user" class="py-2 px-6 bg-indigo-600 hover:bg-indigo-700 rounded-md text-white no-underline duration-150" :to="{name: 'dashboard'}">
+        {{config.public.appUrl}}
+      </NuxtLink>
       <div>
         <h4 class="text-xl font-bold mb-1">Project Pack</h4>
         <div v-for="item in pack" :key="item">
@@ -34,9 +33,7 @@ const pack = [
   {title: 'Autoprefixer 10.4.13'},
   {title: 'Post CSS 8.4.21'},
   {title: 'Sitemap 7.1.1'},
-  {title: 'Supabase 1.35.0'},
   {title: 'Tailwind CSS 3.2.4'},
-  {title: 'Nano ID 4.0.0'},
   {title: 'Preline 1.7.0'},
 
   {title: '---'},

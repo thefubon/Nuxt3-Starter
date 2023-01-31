@@ -61,7 +61,7 @@ const navLinks = [
 const handleLogout = async () => {
   await auth.auth.signOut();
   useRouter().push({
-    name: '/',
+    name: 'index',
   });
 };
 
