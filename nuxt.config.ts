@@ -34,10 +34,10 @@ export default defineNuxtConfig({
       //   { src: '/' }
       // ],
     },
-    pageTransition: {
-      name: 'page',
-      mode: 'out-in'
-    }
+    // pageTransition: {
+    //   name: 'page',
+    //   mode: 'out-in'
+    // }
   },
 
   components: true,
